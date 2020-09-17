@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_group_header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_copy_5">
+
+
+    <ImageView
+        android:id="@+id/caller_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_caller_icon"/>
+
+    <TextView
+        android:id="@+id/textview_newgroups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_toEndOf="@+id/caller_icon"
+        android:text="New group"
+        android:textSize="14sp"
+        android:textColor="@color/midnight_express"/>
+
+    <ImageView
+        android:id="@+id/create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_rectangle"/>
+
+        <TextView
+            android:id="@+id/text_create"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="create"
+            android:textSize="14sp"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:layout_alignBaseline="@+id/create"
+            android:layout_alignParentEnd="true"/>
+</RelativeLayout>

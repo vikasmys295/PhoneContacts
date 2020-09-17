@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relative_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Main2Activity">
+
+    <RelativeLayout
+        android:id="@+id/layout_contacts_header1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bitmap1">
+
+        <TextView
+            android:id="@+id/textview_contacts1"
+            android:layout_width="87dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="CONTACTS"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:background="@drawable/bg"/>
+
+        <Button
+            android:id="@+id/button_search"
+            android:layout_width="263dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/textview_contacts1"
+            android:text="Ex : John Doe, 0500000"
+            android:layout_centerHorizontal="true"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="@drawable/reactange"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_mygroups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_contacts_header1">
+
+        <TextView
+            android:id="@+id/mygroups"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="My Groups"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#0b1e3d"/>
+
+        <ImageView
+            android:id="@+id/imageview_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_expand_more_black_24dp" />
+
+        <ImageView
+            android:id="@+id/imageview_arrow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginEnd="5dp"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_expand_less_black_24dp" />
+
+        <RelativeLayout
+            android:id="@+id/layout_groups_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mygroups"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle_copy_5"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/caller_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_caller_icon"/>
+
+            <TextView
+                android:id="@+id/textview_newgroups"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_toEndOf="@+id/caller_icon"
+                android:text="New group"
+                android:textSize="14sp"
+                android:textColor="@color/midnight_express"/>
+
+            <ImageView
+                android:id="@+id/create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_rectangle"/>
+
+            <TextView
+                android:id="@+id/text_create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="create"
+                android:textSize="14sp"
+                android:layout_margin="10dp"
+                android:textAlignment="center"
+                android:layout_alignBaseline="@+id/create"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_below="@id/layout_groups_header"
+            android:background="#dddddd"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_mycontacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_mygroups">
+
+        <TextView
+            android:id="@+id/mycontacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="My Contacts"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#0b1e3d"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_below="@+id/layout_mycontacts">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/intro"
+    tools:context=".activities.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg">
+
+        <TextView
+            android:id="@+id/textview_logo"
+            android:layout_width="46dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="LOGO"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:background="@drawable/bg"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_logo"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="110dp">
+
+        <TextView
+            android:id="@+id/textview_welcome"
+            android:layout_width="171dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/welcome"
+            android:layout_centerHorizontal="true"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/textview_lorem"
+            android:layout_width="215dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/textview_welcome"
+            android:layout_marginTop="15dp"
+            android:text="@string/lorem"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_middle"
+        android:layout_marginTop="110dp"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/button_guestuser"
+            android:layout_width="263dp"
+            android:layout_height="45dp"
+            android:text="@string/guest_user"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/reactange"/>
+    </RelativeLayout>
+</RelativeLayout>

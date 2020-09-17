@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.ContactsActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/layout_new_group_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/textview_newgroups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:text="NEW GROUP"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/midnight_express"
+            android:background="@drawable/bg"/>
+
+        <ImageView
+            android:id="@+id/imageview_add_members1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:src="@drawable/ic_import_add_members" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_groupname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_new_group_header">
+
+        <TextView
+            android:id="@+id/mygroupname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="My Groups"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#0b1e3d"/>
+
+        <TextView
+            android:id="@+id/imageview_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(0 / 25)"
+            android:layout_margin="20dp"
+            android:layout_marginEnd="5dp"
+            android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AndroidTest</string>
+
+    <string name="welcome">WELCOME</string>
+    <string name="lorem">Lorem Ipsum Dolor Sit Amet
+        Consectetur Adipisicing Elit</string>
+    <string name="guest_user">Try as a Guest User</string>
+
+    <string name="contacts">CONTACTS</string>
+    <string name="no_access">NO ACCESS TO CONTACTS !</string>
+    <string name="we_dont_access">We don’t have access to your contacts,\n
+                You can enable access in \n
+           Settings - vibe - permissions</string>
+
+
+</resources>
